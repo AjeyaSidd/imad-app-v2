@@ -19,7 +19,7 @@ var articles = {
        },
        article2 :  {
            title:'Article 2',
-           heading:'        NNArticle 2',
+           heading:'Article 2',
            date: '26/6/17',
            content : ` <p>
                Content for second article. Content for second article Content for second article 
@@ -74,7 +74,7 @@ app.get('/', function (req, res) {
 
 app.get('/:articleName', function(req,res){
     var article=req.params.articleName;
-  res.send(createTemplate(articles.article));
+  res.send(createTemplate(articles[article]));
 }) ;
 
 app.get('/article2', function(req,res){
