@@ -9,7 +9,7 @@ var articles = {
        article1: {
            title:'Article 1',
            heading:'Article 1',
-           date: 25/6/17,
+           date: '25/6/17',
            content :  `<p>
                    Content for first article.Content for first article.Content for first article.
                </p>
@@ -20,7 +20,7 @@ var articles = {
        article2 :  {
            title:'Article 2',
            heading:'        NNArticle 2',
-           date: 26/6/17,
+           date: '26/6/17',
            content : ` <p>
                Content for second article. Content for second article Content for second article 
                Content for second article Content for second article
