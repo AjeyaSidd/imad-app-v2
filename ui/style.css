@@ -19,9 +19,9 @@ body {
 }
 .container {
     max-width: 800px;
-    color: lightblue;
+    color: blue;
     margin: 0 auto;
     font-family: sans-serif;
     padding: 30px 20px;
-    background-color: lightgrey;
+    background-color: white;
 }
