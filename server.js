@@ -72,8 +72,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article1', function(req,res){
-  res.send(createTemplate(articles.article1));
+app.get('/:articleName', function(req,res){
+    var article=req.params.articleName;
+  res.send(createTemplate(articles.article));
 }) ;
 
 app.get('/article2', function(req,res){
