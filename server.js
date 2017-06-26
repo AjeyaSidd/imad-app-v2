@@ -71,15 +71,15 @@ function createTemplate(data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article2', function(req,res){
-res.sendFile(path.join(__dirname, 'ui', 'article2.html'));
-});
+
  app.get('/:articleName', function(req,res){
     var article=req.params.articleName;
   res.send(createTemplate(articles[article]));
 }) ;
 
-/* 
+/* app.get('/article2', function(req,res){
+res.sendFile(path.join(__dirname, 'ui', 'article2.html'));
+});
 comment out due to 76 */
 
 app.get('/ui/style.css', function (req, res) {
