@@ -1,7 +1,5 @@
-.container {
-    font-family: sans-serif;
+body {
     background-color: lightgrey;
-    margin-top: 75px;
 }
 
 .center {
@@ -19,10 +17,11 @@
 .img-medium {
     height: 200px;
 }
-body {
+.container {
     max-width: 800px;
-    color: #d41355;
+    color: silver;
     margin: 0 auto;
     font-family: sans-serif;
     padding: 30px 20px;
+    background-color: lightgrey;
 }
