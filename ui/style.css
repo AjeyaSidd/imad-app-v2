@@ -1,7 +1,9 @@
 body {
    
 }
-
+div {
+    font-size:30%;
+}
 .center {
     text-align: center;
 }
