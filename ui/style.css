@@ -1,9 +1,7 @@
 body {
    
 }
-div {
-    font-size:100%;
-}
+
 .center {
     text-align: center;
 }
@@ -26,4 +24,5 @@ div {
     font-family: sans-serif;
     padding: 30px 20px;
     background-color: white;
+    font-size:80%;
 }
