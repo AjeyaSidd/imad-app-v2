@@ -18,3 +18,11 @@ button.onclick= function (){
     request.send(null);
  
 };
+
+//sumbit a name
+var nameInput=document.getElementById("name");
+var name= nameInput.value;
+var submit = document.getElementById("sub_btn");
+submit.onclick = function() {
+    
+};
