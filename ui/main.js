@@ -24,8 +24,7 @@ button.onclick= function (){
 var submit = document.getElementById("sub_btn");
 submit.onclick = function() {
     
-    var nameInput=document.getElementById("name");
-    var name= nameInput.value;
+   
     //make a request to server and send the name
      var request= new XMLHttpRequest();
   
@@ -42,8 +41,11 @@ submit.onclick = function() {
             }
             document.getElementById("list").innerHTML=list;
           }
-      }  
-    }; 
+      }
+      
+    };
+     var nameInput=document.getElementById("name");
+     var name= nameInput.value;
   //make the request
     request.open('GET','http://ajeyasidd.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
