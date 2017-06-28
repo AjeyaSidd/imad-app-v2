@@ -25,15 +25,27 @@ var name= nameInput.value;
 var submit = document.getElementById("sub_btn");
 submit.onclick = function() {
     //make a request to server and send the name
-    
+     var request= new XMLHttpRequest();
+  
     //capture list of names and render it
-    var names=['name1','name2','name'];
-    var list='',i;
-    
-    for(i = 0; i<names.length;i++) {
-        list += '<li>' + names[i]+ '</li>'; 
-    }
-    document.getElementById("list").innerHTML=list;
+     request.onreadystatechange = function () {
+      if (request.readyState === XMLHttpRequest.DONE) {
+          if(request.status === 200 ) {
+              var names=request.responseText;
+              names=JSON.parse(names);
+            var list='',i;
+            
+            for(i = 0; i<names.length;i++) {
+                list += '<li>' + names[i]+ '</li>'; 
+            }
+            document.getElementById("list").innerHTML=list;
+          }
+      }  
+    }; 
+  //make the request
+    request.open('GET','http://ajeyasidd.imad.hasura-app.io/submit-name?name='+name,true);
+    request.send(null);
+   
     
     
 };
