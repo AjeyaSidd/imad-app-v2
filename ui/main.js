@@ -20,10 +20,12 @@ button.onclick= function (){
 };
 
 //sumbit a name
-var nameInput=document.getElementById("name");
-var name= nameInput.value;
+
 var submit = document.getElementById("sub_btn");
 submit.onclick = function() {
+    
+    var nameInput=document.getElementById("name");
+    var name= nameInput.value;
     //make a request to server and send the name
      var request= new XMLHttpRequest();
   
